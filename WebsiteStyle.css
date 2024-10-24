@@ -1,0 +1,75 @@
+/*Style for the content of the page, such as centering content changing font and background color and margins*/
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+#center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+i {
+  margin-bottom: 25px;
+}
+body {
+  background-color: rgb(33, 33, 33);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center items horizontally */
+  width: auto;
+  transition: width 0.5s ease-in-out;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(50, 45, 45);
+}
+
+.nav a {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  text-decoration: none;
+}
+
+.nav a i {
+  line-height: 35px;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: margin 0.5s ease-in-out;
+}
+
+.nav:hover a i {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.nav a i {
+  display: block;
+  line-height: 35px;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: margin 0.5s ease-in-out; /* Smooth transition for margin changes */
+}
+
+.nav:hover {
+  width: auto; /* Expand the background width on hover */
+}
+
+.nav a {
+  display: block; /* Display the links as block elements */
+  line-height: 40px; /* Adjust the line height to move the icons down */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

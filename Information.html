@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+        <title>Information</title>
+
+        <script src="https://kit.fontawesome.com/8f1a35c4bd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="WebsiteStyle.css"/>
+    </head>
+    
+    <body>
+        <!--Div for centering the text -->
+        <div id="center">
+            <!--Header for the page title -->
+            <header>
+                <h2>Information</h2>
+            </header>
+
+            <!--Main contents of the page -->
+            <main>
+                <!--Specific information about creater of site and upload date and update date as well as source code.  -->
+                <!--Is an article since it is completely independant of other information on the page.   -->
+                <article>
+                    <!---Information about development of website-->
+                    <p>Site designed and devloped by <i>Jonathan</i>, PTEC student, grade 10</p>
+                    <p>Site first published on (insert date here)</p>
+                    <p>Site last updated on (insert update date here)</p>
+                    <p>View the sites  
+                        <a href="https://github.com/Jonsteelu/PTECgamesLibrary/tree/main/Files">source code</a>
+                    on github</p>
+                </article>
+
+                </br>
+                
+                <!--Information about how to download and open the games that are on the download page-->
+                <!--Is an article since it is completely independant of other information on the page.   -->
+                <article>
+                    <!---Instructions title-->
+                    <p><b>How to play the games</b></p>
+                    <p>Step by step instructions</p>
+                    <p>
+                        <!--Ordered list for step by step instructions on how to download and extract and open the games-->
+                        <ol type="1">
+                            <li>Click on the zip file to download the game</li>
+                            <li>Extract the zipped file to a location of your choice</li>
+                            <li>Open the folder and find the file of type application(.exe)</li>
+                            <!--using a discriptive list inside of the ordered list for a sub discriptive bullet point to clarify something -->
+                            <dl>
+                                <dd>But not the one called UnityCrashHandler64</dd>
+                            </dl>
+                            <li>Double click the file and enjoy the game!</li>
+                        </ol>
+                    </p>
+                </article>
+                </br>
+            </main>
+        </div>
+
+        <!--
+            Footer of the site contains only the navigation bar at this point. 
+            The navigation bar semantic tag is used with the nav css class to give it the background rectangle thing.   
+        -->
+        <footer>
+            <nav class="nav">
+                <!---Home-->
+                <a href="Index.html"><i class="fa-solid fa-house fa-2xl" style="color: #fafafa;"></i></i></a>
+         
+                <!---Games-->
+                <a href="Games.html"><i class="fa-solid fa-gamepad fa-2xl" style="color: #fafafa;"></i></a>
+
+                <!---Information-->
+                <a href="Information.html"><i class="fa-solid fa-circle-info fa-2xl" style="color: #fafafa;"></i></a>
+            </nav>
+        </footer>
+    </body>
+</html>

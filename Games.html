@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+    <title>Our Games</title>
+    <script src="https://kit.fontawesome.com/8f1a35c4bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="WebsiteStyle.css"/>
+    <link rel="stylesheet" href="Cards.css"/>
+  
+    <style>
+      .contribute {
+        background-color: rgb(50, 45, 45);
+        border-radius: 20px;
+        min-width: 400px;
+        min-height: 225px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 calc(30% - 20px);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .contribute h3 {
+        color: inherit;
+        text-decoration: none;
+        position: relative;
+      }
+
+      .contribute h3::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 4px;
+        background-color: white;
+        transition: width 0.2s;
+      }
+
+      .contribute:hover h3::before {
+        width: 100%;
+      }
+    </style>
+  
+  </head>
+  <body>
+    <div id="center">
+      <header>
+        <h1>Our Games</h1>
+      </header>
+
+      <section>
+        <div class="card-container">
+          <div class="card">
+            <img src="Images/CardImage.png" alt="Card Image"id="card1">
+            <div class="overlay" id="overlay1"><p>test 1</p></div>
+          </div>
+          <div class="card">
+            <img src="Images/CardImage.png" alt="Card Image"id="card2">
+            <div class="overlay" id="overlay2"><p>test 2</p></div>
+          </div>
+          <div class="card">
+            <img src="Images/CardImage.png" alt="Card Image"id="card3">
+            <div class="overlay" id="overlay3"><p>test 3</p></div>
+          </div>
+          <div class="card">
+            <img src="Images/CardImage.png" alt="Card Image"id="card3">
+            <div class="overlay" id="overlay3"><p>test 3</p></div>
+          </div>
+          <div class="card">
+            <img src="Images/CardImage.png" alt="Card Image"id="card3">
+            <div class="overlay" id="overlay3"><p>test 3</p></div>
+          </div>
+          <a href="Information.html" class="contLink contUnd">
+            <div class="card contribute">
+              <h2>Want to see your game here!</h2>
+              <h3>Contribute</h3>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <nav class="nav">
+        <!---Home-->
+        <a href="Index.html"><i class="fa-solid fa-house fa-2xl" style="color: #fafafa;"></i></i></a>
+         
+        <!---Games-->
+        <a href="Games.html"
+          ><i class="fa-solid fa-gamepad fa-2xl" style="color: #fafafa"></i
+        ></a>
+
+        <!---Information-->
+        <a href="Information.html"
+          ><i class="fa-solid fa-circle-info fa-2xl" style="color: #fafafa"></i
+        ></a>
+      </nav>
+    </footer>
+  </body>
+</html>

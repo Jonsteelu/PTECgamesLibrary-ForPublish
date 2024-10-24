@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <!--
+      Name: Jonathan
+      Course: Web Development 20S
+      Teacher: Ms Hoitink
+      School: Pembina Trails Collegiate (PTC)
+      Date Last Modified:  
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+    <title>PTEC Games Library</title>
+    <script src="https://kit.fontawesome.com/8f1a35c4bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="WebsiteStyle.css"/>
+  </head>
+  <body>
+
+    <!--Div for centering the text -->
+    <div id="center">
+      <!--Header for the page title -->
+      <header>
+        <h2>PTEC Games Library</h2>
+      </header>
+
+      <!--Main contents of the page -->
+      <main>
+        <!--General information about the page. In an article tag because it can be displayed individual and still make sense and is its own part-->
+        <article>
+          <h4>About This Site</h4>
+          <p>This site is a <i>library of games</i> that PTEC students have created. Feel free to 
+            <a href="Downloads.html">download</a>
+            and try any of 
+            <a href="Games.html">our games.</a>
+          </p>
+          <p>All games are made on the 
+            <a href="https://unity.com/"><b>Unity</b></a> 
+            game engine.</p>
+          <p>These games were made by <u>grade 9 PTEC students</u> in the 2023/2024 school year as their end of year final project.</p>
+        </article>
+
+        <!--Figure semantic tags for the iframes of the map and video -->
+        <figure>
+          <!--A fig caption to tell what the figure is about. Spans multiple lines as code for displaying text in a certain way is used in the figure caption -->
+          <figcaption>
+            <span style="display: inline-block; margin-right: 450px;">
+              <h4>Where we're located</h4>
+              <a href="https://maps.app.goo.gl/QsASnZkGwdFiacrN9">Google Maps Link</a>
+            </span>
+
+            <span style="display: inline-block;">
+              <h4>What we do</h4>
+              <a href="https://youtu.be/AJ6Mkx1KEns?si=AS8L4Q5eBg8dM3s">Unity Trailer Link</a>
+            </span>
+          </figcaption>
+
+          <!--Iframes with the actual map and youtube video -->
+          </br>
+          <!---Maps-->
+          <iframe width="560" height="315" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2317.405031001538!2d-97.18694802440616!3d49.79935420924548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea75d46b3d8811%3A0x4633f0116d026344!2sPembina%20Trails%20Collegiate!5e0!3m2!1sen!2sca!4v1726070812126!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <!---Youtube-->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/AJ6Mkx1KEns?si=Ec9iOZTEBRwwoxuO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figure>
+      </main>
+      <br><br>
+    </div>
+
+    <!--
+      Footer of the site contains only the navigation bar at this point. 
+      The navigation bar semantic tag is used with the nav css class to give it the background rectangle thing.   
+    -->
+    <footer>
+      <nav class="nav">
+        <!---Home-->
+        <a href="Index.html"><i class="fa-solid fa-house fa-2xl" style="color: #fafafa;"></i></i></a>
+         
+        <!---Games-->
+        <a href="Games.html"><i class="fa-solid fa-gamepad fa-2xl" style="color: #fafafa;"></i></a>
+
+        <!---Information-->
+        <a href="Information.html"><i class="fa-solid fa-circle-info fa-2xl" style="color: #fafafa;"></i></a></nav>
+    </footer>
+  </body>
+</html>
